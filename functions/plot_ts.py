@@ -7,6 +7,6 @@ def plot(ticker:str):
 
     df = data.reset_index()[['Date', 'Close']]
 
-    fig = px.line(df, x= 'Date', y = 'Close', titlte = f'Histotico de {ticker}')
+    fig = px.line(df, x= 'Date', y = 'Close', title= f'Histotico de {ticker}')
 
     return fig
